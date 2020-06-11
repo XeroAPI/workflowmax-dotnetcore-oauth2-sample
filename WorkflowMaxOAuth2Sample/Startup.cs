@@ -32,8 +32,8 @@ namespace WorkflowMaxOAuth2Sample
 
             services.TryAddSingleton(new XeroConfiguration
             {
-                ClientId = Configuration["Xero:ClientId"],
-                ClientSecret = Configuration["Xero:ClientSecret"]
+                ClientId = Configuration["A088BD69F7854693B45A072F7AB32153"],
+                ClientSecret = Configuration["IeAnfk76KtB9qLvSCjxPBiOA3Zzzr7bXJhPrzZsvVEKBSkB3"]
             });
 
             services.TryAddSingleton<IXeroClient, XeroClient>();
@@ -69,8 +69,8 @@ namespace WorkflowMaxOAuth2Sample
             {
                 options.Authority = "https://identity.xero.com";
 
-                options.ClientId = Configuration["Xero:ClientId"];
-                options.ClientSecret = Configuration["Xero:ClientSecret"];
+                options.ClientId = Configuration["A088BD69F7854693B45A072F7AB32153"];
+                options.ClientSecret = Configuration["IeAnfk76KtB9qLvSCjxPBiOA3Zzzr7bXJhPrzZsvVEKBSkB3"];
 
                 options.ResponseType = "code";
 
